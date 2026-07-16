@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+
+    <h1>Attendance Management System</h1>
+
+    <div class="form">
+        <input type="text" id="studentName" placeholder="Enter Student Name">
+
+        <button onclick="markAttendance('Present')" class="present">
+            Mark Present
+        </button>
+
+        <button onclick="markAttendance('Absent')" class="absent">
+            Mark Absent
+        </button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Status</th>
+                <th>Date & Time</th>
+            </tr>
+        </thead>
+
+        <tbody id="attendanceList">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
